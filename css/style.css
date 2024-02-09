@@ -1,0 +1,353 @@
+
+/*  GENERAL  */
+    
+ *  {background-color: transparent;
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+    
+     }
+     body{      transition: background-color 0.3s;
+     }
+     body.black {
+        background-color: rgb(12, 13, 31);
+        color: white;
+      }
+    .container {
+     width:100%;
+     margin: auto;
+     overflow:hidden;
+     }
+     .line{ transition: 1s;
+        display: block;
+        width: 62px;
+        height: 5px;
+        background-color: rgb(164, 164, 184);
+       margin: 0  auto  50px  auto;
+    } 
+    .line:hover{transform: scalex(3);}
+    h2{ text-align: center;
+        font-size: 40px;
+        color: #f52d0e;;;
+    margin-top: 5%;}
+     a {        color: #f52d0e;;
+
+        text-decoration: none;
+     }
+     a:hover{color: #d44545;
+    border: #7a7676 0.1px;
+  }
+   .navbar{position: fixed;
+z-index: 20;
+width: 100vw;}
+    .navbar .navbar-brand,  li i:hover,  .navbar .navbar-nav .nav-item:hover a{color: #f52d0e;;}
+  
+  #vertical-slider{position: absolute;
+  top:50%;
+  left: 50%;
+
+}
+    
+      .head{position: relative;
+        height: 50vh;
+      width: 100wh;
+    background: url(../images/arrangement-black-friday-shopping-carts-with-copy-space.jpg) center/cover;}
+    .head .carousel,.Offers .carousel {position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);}
+      .carousel-item {
+        text-align: center;
+      }
+  
+      .head .carousel-item img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+  
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        font-size: 30px;
+      }
+     
+      .section-margin {
+        margin-top: 60px;
+      }
+  
+      .card-product {
+        margin: 5px;
+        width: 100%;
+        border: none;
+        height: 550px;
+     
+      }
+  
+      .card-product__img {
+        position: relative;
+      }
+  .card-body{text-align: left;}
+      .card-img {
+        width: 100%;
+        border-radius: 0;
+        height: 400px;
+      }
+  
+      .card-product__imgOverlay {
+        background: linear-gradient(rgb(22, 22, 22), rgba(247, 247, 248, 0.467));
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 5px;
+        transform: translateY(30px);
+        opacity: 0;
+        z-index: -1;
+        transition: all .48s ease;
+      }
+  
+      .card-product__imgOverlay li {
+        display: inline-block;
+      }
+  
+      .card-product__imgOverlay li button {
+        border: 0;
+        border-radius: 0;
+        padding: 7px 12px;
+        background: #f52d0e;;
+      }
+  
+      .card-product__imgOverlay li button i, .card-product__imgOverlay li button span {
+        font-size: 15px;
+        color: #fff;
+        vertical-align: middle;
+      }
+  
+      .card-product__imgOverlay li button:hover {
+        background: #747070;
+      }
+  
+      .card-product__imgOverlay li:not(:last-child) {
+        margin-right: 5px;
+      }
+ 
+  
+      .card-product__price {
+        font-size: 18px;
+        font-weight: 500;
+      }
+  
+      .vertical-icons {
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        display: flex;
+        color: #f52d0e;;
+        font-size: 40px;
+        flex-direction: column;
+      }
+      .card-product:hover{border: #747070 0.1px solid;}
+  
+      .card-product:hover .card-product__imgOverlay {
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0);
+      }
+  
+      .card-product:hover .card-product__title {
+        display: block;
+      }
+  
+      .card-product:hover .card-product__title a {
+        color: #f52d0e;}
+
+        footer{padding-top: 50px;
+            background: -webkit-linear-gradient(rgb(30, 30, 31),rgba(247, 247, 248, 0.467));
+        color: #fff;}
+        #headingLadies .btn-visit{width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: transparent;
+        color: #f52d0e;;;
+    font-weight: bolder;}
+    
+.Offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50vh;
+  align-items: start;
+  height:45vh;
+}
+
+.double-width {
+position: relative;
+  background:-webkit-radial-gradient(top left,rgb(0, 0, 0),rgb(31, 29, 18),rgb(58, 46, 17),#f52d0e);
+  padding:5% 20px;
+  text-align: center;
+  position: relative;
+  width: 46%;
+}
+
+.quotation-icon {
+  font-size: 48px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.small-width {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  background-image: url(../images/arrangement-black-friday-shopping-carts-with-copy-space.jpg);
+  background-repeat: no-repeat;
+
+  background-size: 110%;
+
+  transition: 0.5s;
+  text-align: center;
+}
+.small-width.gift{    
+  position: relative;
+      background-image: url(../images/top-view-black-friday-arrangement-black-background.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+.Offers h2 { text-align: left;
+  font-size: 30px;
+  margin-top: 4%;
+  margin-left:15%;
+  color: #f52d0e;
+}
+
+.Offers p {
+  font-size: 16px;
+  text-align: left;
+  color: whitesmoke;
+  margin-left:15%;
+  margin-top: 4%;
+}
+.small-width h2,.small-width p{ margin-left: 25%;
+}
+.small-width h2{margin-top: 20%;}
+.small-width:hover{transform: scale(1.05);}
+.Offers .icon{position: absolute;
+  left:5%;
+  top:25%;
+  color: #f52d0e;;
+  font-size: 40px;
+
+}
+
+.cardco{perspective: 7000px; /* Adjust the perspective value for different levels of 3D effect */
+  transform-style: preserve-3d;
+  position: relative;
+  width:450px;
+  height:700px;
+  transition: 4s
+}
+.register-container {
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+width: 100%;
+   
+}
+
+.register-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.register-body {
+  padding: 20px;
+
+  background-color: #cccccc76;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #555;
+}
+  
+
+.card-container {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 100px auto;
+}
+
+.cardi {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginContainer {
+  transform: rotateY(0deg);
+}
+
+#registerContainer {
+  transform: rotateY(180deg);
+}
+ .cardnav{display: none;}
+ #userlogedin{display:none;
+  color: red;}
+
+ 
+.row{display: flex;
+flex-wrap: nowrap;}
+.cardProduct{background-color: #cccccc8a;
+width: 150px;}
+.cardProduct li:hover{background: #ffffff;}
+.dropdown-menu{width: 150px;}
